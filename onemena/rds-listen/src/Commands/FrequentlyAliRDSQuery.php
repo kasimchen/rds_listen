@@ -118,7 +118,7 @@ class FrequentlyAliRDSQuery extends Command
         $request = new DescribeSQLLogReportListRequest();
         $request->setDBInstanceId($config['DBInstanceId']);
         $date = date("Y-m-d",time()).'T';
-        $start_time = $date.date("H:i:s",time()-3600).'Z';
+        $start_time = $date.date("H:i:s",time()-config['ReportDuringTime']).'Z';
         $end_time = $date.date("H:i:s",time()).'Z';
 
         $request->setStartTime($start_time);
@@ -167,7 +167,7 @@ class FrequentlyAliRDSQuery extends Command
 
             \File::append($file_path,$html);
 
-            $this->sendEmail("RDS高峰查询日志-".$config['name']."-".$time,$html);
+            $this->sendEmail("RDS高峰查询日志-".$config['Name']."-".$time,$html);
 
         } catch(ServerException $e) {
             print "Error: " . $e->getErrorCode() . " Message: " . $e->getMessage() . "\n";
