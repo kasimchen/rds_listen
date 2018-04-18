@@ -118,7 +118,7 @@ class FrequentlyAliRDSQuery extends Command
         $request = new DescribeSQLLogReportListRequest();
         $request->setDBInstanceId($config['DBInstanceId']);
         $date = date("Y-m-d",time()).'T';
-        $start_time = $date.date("H:i:s",time()-config['ReportDuringTime']).'Z';
+        $start_time = $date.date("H:i:s",time()-$config['ReportDuringTime']).'Z';
         $end_time = $date.date("H:i:s",time()).'Z';
 
         $request->setStartTime($start_time);
