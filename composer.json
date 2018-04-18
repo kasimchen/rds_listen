@@ -16,9 +16,6 @@
         "chenhuan/aliyun-php-sdk-dm":"dev-master"
     },
     "autoload": {
-        "classmap": [
-            "database"
-        ],
         "psr-4": {
             "App\\": "app/",
             "Onemena\\RdsListen\\": "onemena/rds-listen/src/"
