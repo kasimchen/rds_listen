@@ -15,7 +15,9 @@ return [
                 'AccessKeySecret'=>'',//sk
                 'DBInstanceId'=>'',//数据库实例
                 'RDS_MySQL_QPSTPS_MAX'=>env('RDS_MySQL_QPSTPS_MAX',10),//超过此值发送邮件
-                'Name'=>'服务器1'
+                'Name'=>'服务器1',
+		'ReportDuringTime'=>env('REPORT_DURING_TIME',3600)//多少秒内的频繁sql语句查询
+
             ]
         ],
     'mail'=>[
