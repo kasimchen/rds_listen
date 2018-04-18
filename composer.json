@@ -1,0 +1,27 @@
+{
+    "name": "onemena/rds-listen",
+    "description": "查询以及高并发频繁语句监听",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "kasimchen",
+            "email": "chenhuan@liaosearch.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.0.0",
+        "qingpai/aliyun-php-sdk-rds": "^1.0.0",
+        "chenhuan/aliyun-php-sdk-dm":"dev-master"
+    },
+    "autoload": {
+        "classmap": [
+            "database"
+        ],
+        "psr-4": {
+            "App\\": "app/",
+            "Onemena\\RdsListen\\": "onemena/rds-listen/src/"
+        }
+    }
+}
