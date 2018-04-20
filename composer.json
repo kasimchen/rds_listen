@@ -12,7 +12,7 @@
     "minimum-stability": "dev",
     "require": {
         "php": ">=7.0.0",
-        "qingpai/aliyun-php-sdk-rds": "^1.0.0",
+        "onemena/aliyun-php-sdk-rds": "*",
         "chenhuan/aliyun-php-sdk-dm":"dev-master"
     },
     "autoload": {
