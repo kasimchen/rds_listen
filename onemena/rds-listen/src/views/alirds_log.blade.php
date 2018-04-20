@@ -41,7 +41,8 @@
                 </td>
 
                 <td style='border:solid black 1.0pt;border-left: none;border-right: none;text-align: center;min-width: 300px;'>
-                    {{$item['SQLText']}}
+                     {{isset($item['SQLText'])?$item['SQLText']:'无'}}
+
                 </td>
             </tr>
             @endforeach

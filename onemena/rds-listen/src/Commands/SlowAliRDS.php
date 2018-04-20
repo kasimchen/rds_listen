@@ -92,7 +92,7 @@ class SlowAliRDS extends Command
                 $collection = collect($logs);
                 $collection->sortBy('MaxExecutionTime');
                 $data = $collection->values()->all();
-                $html = view('command.alirds_log',compact('data','time'));
+                $html = view('vendor.rds-listen..alirds_log',compact('data','time'));
 
 
                 if(!\Storage::exists('public/alirds_log')){

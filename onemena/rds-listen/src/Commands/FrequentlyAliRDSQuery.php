@@ -154,7 +154,7 @@ class FrequentlyAliRDSQuery extends Command
 
             $time = date('Y-m-d H:i:s',time());
 
-            $html = view('command.alirds_frenquently_log',compact('data'))->render();
+            $html = view('vendor.rds-listen.alirds_frenquently_log',compact('data'))->render();
 
             if(!Storage::exists('public/alirds_frenquently_log')){
                 Storage::makeDirectory('public/alirds_frenquently_log');
