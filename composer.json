@@ -12,8 +12,8 @@
     "minimum-stability": "dev",
     "require": {
         "php": ">=7.0.0",
-        "onemena/aliyun-php-sdk-rds": "*",
-        "chenhuan/aliyun-php-sdk-dm":"dev-master"
+        "onemena/aliyun-php-sdk-rds": "^1.0",
+        "chenhuan/aliyun-php-sdk-dm":"^1.0"
     },
     "autoload": {
         "psr-4": {
